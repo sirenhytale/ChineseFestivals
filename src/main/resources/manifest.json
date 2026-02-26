@@ -1,0 +1,21 @@
+{
+  "Group": "plugin.siren",
+  "Name": "Chinese Festivals",
+  "Version": "0.1.0",
+  "Description": "Add Chinese Festival items into Hytale!",
+  "Authors": [
+    {
+      "Name": "Siren",
+      "Url": "https://discord.gg/3DzCQ29UUC"
+    }
+  ],
+  "Website": "https://discord.gg/3DzCQ29UUC",
+  "ServerVersion": "2026.02.19-1a311a592",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": true,
+  "SubPlugins": [],
+  "Main": "plugin.siren.ChineseFestivals"
+}
