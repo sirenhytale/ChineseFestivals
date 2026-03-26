@@ -1,0 +1,7 @@
+# === items ===
+
+items.Deco_CF_Spring_Lantern.name = Chinese Lantern
+
+# === updateChecker ===
+
+updateChecker.chinesefestivals.release.message = The Chinese Festivals Mod version is outdated, Chinese Festivals has released v{version}.

@@ -4,7 +4,7 @@ import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent;
 import com.hypixel.hytale.server.core.universe.world.World;
 import plugin.siren.ChineseFestivals;
-import plugin.siren.Utils.UpdateChecker;
+import plugin.siren.Utils.UpdateCheckerCF;
 
 public class PlayerReadyEventCF {
     public static void onPlayerReadyEvent(PlayerReadyEvent event){
@@ -12,14 +12,7 @@ public class PlayerReadyEventCF {
         world.execute(() -> {
             Player player = event.getPlayer();
 
-            String recentVersion = UpdateChecker.checkForUpdate();
-            if(!ChineseFestivals.getVersion().equalsIgnoreCase(recentVersion)){
-                String versionMessage = "The Chinese Festivals Mod version is outdated, Chinese Festivals has released v" + recentVersion +".";
-                ChineseFestivals.LOGGER.atInfo().log(versionMessage);
-                /*if(player.hasPermission("*")){
-                    player.sendMessage(Message.raw(versionMessage).color(Color.RED));
-                }*/
-            }
+            UpdateCheckerCF.sendUpdateMessage(player);
         });
     }
 }

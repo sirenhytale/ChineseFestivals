@@ -1,7 +1,7 @@
 {
   "Parent": "Deco_Lantern",
   "TranslationProperties": {
-    "Name": "items.Deco_CF_Spring_Lantern.name"
+    "Name": "server.items.Deco_CF_Spring_Lantern.name"
   },
   "Icon": "Icons/ItemsGenerated/Deco_CF_Spring_Lantern.png",
   "Recipe": {
