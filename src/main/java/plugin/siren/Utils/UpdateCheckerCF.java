@@ -72,7 +72,7 @@ public class UpdateCheckerCF {
     public static void sendUpdateMessage(@Nullable Player player, boolean sendToPlayer){
         String recentVersion = checkForUpdate();
         if(!ChineseFestivals.getVersion().equalsIgnoreCase(recentVersion)){
-            String translationId = "updateChecker.chinesefestivals.release.message";
+            String translationId = "server.updateChecker.chinesefestivals.release.message";
             Message versionMessage = Message.translation(translationId).param("version", recentVersion);
 
             ChineseFestivals.LOGGER.atInfo().log(versionMessage.getAnsiMessage());
